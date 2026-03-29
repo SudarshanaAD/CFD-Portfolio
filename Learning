@@ -1,0 +1,19 @@
+CFD-Portfolio/
+│
+├── ChannelFlow/
+│   ├── residuals.png
+│   ├── velocity_contours.png
+│   ├── pressure_contours.png
+│   └── README.md
+│
+├── CylinderFlow/
+│   ├── vortex_shedding.png
+│   ├── pressure_distribution.png
+│   └── README.md
+│
+├── MeshStudy/
+│   ├── coarse_mesh.png
+│   ├── fine_mesh.png
+│   └── README.md
+│
+└── README.md   <-- Main overview of the portfolio
