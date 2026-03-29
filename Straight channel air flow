@@ -1,0 +1,26 @@
+# Project: [Airflow in a straight channel]
+
+## ⚙️ Setup
+- **Geometry:** [Straight 2D channel (length = 1 m, height = 0.1 m).]
+- **Fluid:** [Air at 25 °C (density ≈ 1.225 kg/m³, viscosity ≈ 1.789e‑5 kg/m·s).]
+- **Boundary Conditions:** [Inlet: Uniform velocity = 1 m/s.
+
+Outlet: Pressure outlet (0 Pa gauge).
+
+Walls: No‑slip condition.]
+- **Solver:** [Steady, laminar, incompressible.]
+
+## 📊 Results
+### Residuals
+![Residuals](residuals.png)
+
+### Velocity Contours
+![Velocity](velocity_contours.png)
+
+### Pressure Contours
+![Pressure](pressure_contours.png)
+
+## 🔍 Learnings
+- Key observations about convergence and flow behavior.
+- Comparison with analytical or reference results.
+- Notes on solver stability and boundary condition effects.
