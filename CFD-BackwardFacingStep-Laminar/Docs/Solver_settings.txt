@@ -1,0 +1,11 @@
+Solver Settings:
+
+- Solver type: Pressure-based, steady-state
+- Flow model: Laminar
+- Pressure-velocity coupling: SIMPLE
+- Discretization schemes:
+  * Pressure: Standard
+  * Momentum: Second-order upwind
+- Convergence criteria: Residuals < 1e-5
+- Initialization: Hybrid
+- Iterations: 1000

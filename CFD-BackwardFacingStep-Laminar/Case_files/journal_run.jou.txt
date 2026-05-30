@@ -1,0 +1,32 @@
+; Journal file for Backward-Facing Step (Laminar Flow)
+
+; Read mesh
+/file/read-mesh bfs_mesh.msh
+
+; Define fluid properties
+/define/materials change-create water yes 1000 0.001
+
+; Boundary conditions
+/define/boundary-conditions velocity-inlet inlet yes no 0.0029
+/define/boundary-conditions pressure-outlet outlet yes no 0
+/define/boundary-conditions wall walls no-slip
+
+; Solver settings
+/solve/set/solver-type pressure-based
+/solve/set/flow-model laminar
+/solve/set/p-v-coupling SIMPLE
+/solve/set/discretization-scheme momentum second-order-upwind
+/solve/set/discretization-scheme pressure standard
+
+; Initialization
+/solve/initialize/hyb-initialization
+
+; Run iterations
+/solve/iterate 1000
+
+; Save case and data
+/file/write-case-data bfs_case.cas bfs_case.dat
+
+; Export wall shear stress plot
+/plot/xy-plot wall-shear-stress yes "walls_after_expansions"
+/file/write-data wall_shear_stress.txt

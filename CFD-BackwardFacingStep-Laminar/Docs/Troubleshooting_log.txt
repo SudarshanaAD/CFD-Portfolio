@@ -1,0 +1,11 @@
+Troubleshooting Log:
+
+Issue 1: Residuals converged but wall shear stress stayed negative
+Resolution: Identified outlet too close; reattachment outside domain
+
+Issue 2: Mesh coarse near wall
+Resolution: Plan to refine mesh near step and bottom wall
+
+Lessons Learned:
+- Always design domain length ≥20 × step height
+- Document limitations clearly in results

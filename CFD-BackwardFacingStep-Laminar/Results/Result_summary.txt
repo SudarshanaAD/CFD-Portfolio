@@ -1,0 +1,34 @@
+Results Summary – Backward-Facing Step (Laminar Flow)
+
+Residuals:
+- Residuals converged to ~1e-6 after ~500 iterations.
+- Indicates numerical stability of the solution.
+
+Velocity Field:
+- Pathlines colored by velocity magnitude show high velocity at the inlet (red).
+- Flow expands after the step, velocity decreases downstream (green → blue).
+- Recirculation bubble visible near the bottom wall downstream of the step.
+
+Pressure Field:
+- Pressure contours show a drop across the step.
+- Low-pressure region formed inside the recirculation bubble.
+
+Wall Shear Stress:
+- X-wall shear stress along the downstream wall remains negative (from ~–1.7e–21 Pa to ~–1.2e–05 Pa).
+- Indicates sustained reverse flow along the wall.
+- No zero-crossing observed → reattachment point lies outside the simulated domain.
+
+Interpretation:
+- Simulation correctly captures flow separation at the step.
+- Recirculation bubble extends beyond the outlet length (3 m downstream).
+- Current geometry insufficient to capture reattachment length within domain.
+
+Limitations:
+- Outlet too close → reattachment not observed.
+- Mesh refinement near wall may need improvement.
+- Future runs should extend downstream length (≥15–20 × step height) to capture reattachment point.
+
+Next Steps:
+- Redesign geometry with longer downstream channel.
+- Perform grid independence study.
+- Compare reattachment length with literature values once captured.

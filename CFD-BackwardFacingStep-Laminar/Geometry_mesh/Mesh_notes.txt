@@ -1,0 +1,21 @@
+Geometry:
+- Channel height H = 1.0 m
+- Step height h = 0.2 m
+- Upstream length = 1.0 m
+- Downstream length = 3.0 m
+
+Mesh:
+- Type: Structured quadrilateral mesh
+- Total cells: ~25,000
+- Refinement: Finer near step corner and bottom wall
+- Growth rate: 1.2
+- Minimum cell size near wall: 0.005 m
+
+Quality:
+- Max skewness = 0.28
+- Aspect ratio < 5
+- Orthogonality > 0.85
+
+Notes:
+- Grid independence not yet tested
+- Plan to refine downstream wall region for better reattachment capture

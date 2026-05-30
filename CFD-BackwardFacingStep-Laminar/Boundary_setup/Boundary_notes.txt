@@ -1,0 +1,37 @@
+Simulation Setup Notes – Backward-Facing Step (Laminar Flow)
+
+Geometry:
+- Channel height (H): 1.0 m
+- Step height (h): 0.2 m
+- Upstream length: 1.0 m
+- Downstream length: 3.0 m
+- Step ratio: h/H = 0.2
+
+Fluid Properties:
+- Fluid: Water (or specify fluid used)
+- Density (ρ): 1000 kg/m³
+- Dynamic viscosity (μ): 0.001 Pa·s
+- Reynolds number (based on inlet velocity and step height): Re = 200
+
+Boundary Conditions:
+- Inlet: Velocity inlet, U = 0.0029 m/s (calculated for Re = 200)
+- Outlet: Pressure outlet, gauge pressure = 0 Pa
+- Walls: No-slip condition
+
+Solver Settings:
+- Solver type: Pressure-based, steady-state
+- Flow model: Laminar
+- Pressure-velocity coupling: SIMPLE
+- Discretization schemes:
+  - Pressure: Standard
+  - Momentum: Second-order upwind
+- Convergence criteria: Residuals < 1e-5
+
+Initialization:
+- Hybrid initialization
+- Number of iterations: 1000 (residuals converged)
+
+Notes:
+- Residuals converged to ~1e-6
+- Wall shear stress remained negative along downstream wall → reattachment point outside current domain
+- Plan: Extend downstream length in future runs to capture reattachment

@@ -1,0 +1,17 @@
+Reynolds Number Calculation:
+
+Formula:
+Re = (ρ * U * h) / μ
+
+Values:
+ρ = 1000 kg/m³
+U = 0.0037 m/s
+h = 0.2 m
+μ = 0.001 Pa·s
+
+Calculation:
+Re = (1000 * 0.0037 * 0.2) / 0.001
+Re = 740
+
+Note:
+For laminar demonstration, inlet velocity was reduced to target Re ≈ 200.

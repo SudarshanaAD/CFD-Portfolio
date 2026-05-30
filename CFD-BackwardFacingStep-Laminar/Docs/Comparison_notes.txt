@@ -1,0 +1,13 @@
+Comparison Notes:
+
+Literature Reference:
+- Typical reattachment length (Re = 100) ≈ 6–8 × step height
+- At higher Re, reattachment length increases
+
+Current Simulation:
+- Wall shear stress remains negative along downstream wall
+- Reattachment point not captured within 3 m domain
+
+Interpretation:
+- Domain length insufficient to observe reattachment
+- Results consistent with separation and sustained recirculation
